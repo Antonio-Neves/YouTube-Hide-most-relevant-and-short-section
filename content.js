@@ -1,4 +1,4 @@
-// This function hides "Mais relevantes" and "Shorts" shelf sections regardless of language
+// This function hides "Most relevants" and "Shorts" shelf sections regardless of language
 function hideYoutubeSections() {
   // Get all rich shelf renderers
   const shelves = document.querySelectorAll('ytd-rich-shelf-renderer');
