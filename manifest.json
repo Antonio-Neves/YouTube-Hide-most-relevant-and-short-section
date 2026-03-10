@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Relevant and Short sections",
+  "author": "Antonio Calheiros Neves",
+  "version": "1.0",
+  "description": "Hide the relevant and short videos sections on YouTube in subscriptions page",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hide Relevant and Short sections"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
